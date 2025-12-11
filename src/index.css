@@ -1,0 +1,126 @@
+:root {
+  /* Premium Cheese Palette */
+  --color-primary: #1a1a2e;
+  /* Midnight Blue */
+  --color-secondary: #f4c430;
+  /* Saffron/Gold */
+  --color-accent: #e94560;
+  /* Subtle Red/Pink accent */
+  --color-background: #fdfbf7;
+  /* Off-white/Cream */
+  --color-surface: #ffffff;
+  --color-text-main: #2d3436;
+  --color-text-muted: #636e72;
+  --color-border: #e2e8f0;
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-premium: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.app-header {
+  padding: 4rem 0;
+  text-align: center;
+  background: linear-gradient(to bottom, white, var(--color-background));
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 3rem;
+}
+
+.app-header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+/* Utilities */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25em 0.75em;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-success {
+  background-color: #ecfdf5;
+  color: #047857;
+}
+
+.header-controls {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.count-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+}
+
+.count-number {
+  font-size: 3rem;
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.count-label {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  margin-top: 0.25rem;
+}
+
+.badge-danger {
+  background-color: #fef2f2;
+  color: #991b1b;
+}
